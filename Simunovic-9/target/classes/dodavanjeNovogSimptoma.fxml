@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #B0C4DE;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.DodavanjeNovogSimptomaController">
+   <center>
+      <GridPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="350.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="144.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="256.0" minWidth="10.0" prefWidth="206.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Dodavanje novog simptoma" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label text="Naziv simptoma:" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+            <Label text="Vrijednost simptoma:" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="nazivSimptoma" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="dodajNoviSimptom" mnemonicParsing="false" onAction="#dodajNoviSimptom" text="Spremi" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="ID simptoma" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+            <Label fx:id="idSimptoma" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <ComboBox fx:id="vrijednostSimptoma" prefHeight="25.0" prefWidth="160.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </center>
+   <top>
+       <fx:include fx:id="izbornik" source="izbornik.fxml" />
+   </top>
+</BorderPane>

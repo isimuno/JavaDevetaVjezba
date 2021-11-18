@@ -1,0 +1,6 @@
+#Podaci za spajanje na bazu podataka
+bazaPodatakaUrl = jdbc:h2:tcp://localhost/~/covidportal
+
+#Podaci za pristupanje bazi podataka
+korisnickoIme = isimun2
+lozinka = student

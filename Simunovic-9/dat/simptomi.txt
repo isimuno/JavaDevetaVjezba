@@ -1,0 +1,24 @@
+1
+Glavobolja
+ČESTO
+2
+Temperatura
+SREDNJE
+3
+Grlobolja
+RIJETKO
+4
+Curenje nosa
+SREDNJE
+5
+Kašalj
+SREDNJE
+6
+Kratkoća daha
+RIJETKO
+7
+Kašalj
+ČESTO
+8
+Vrtoglavica
+SREDNJE
